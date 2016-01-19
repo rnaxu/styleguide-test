@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+.searchBox {
+    margin: 16px 20px 18px;
+    font-size: 13px;
+    &__area {
+        margin-right: 16px;
+    }
+    &__keyword {
+    }
+}

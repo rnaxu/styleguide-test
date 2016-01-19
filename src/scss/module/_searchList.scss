@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+.searchList {
+    background-color: #fff;
+    font-size: 15px;
+    color: #212121;
+    &__item {
+        border-bottom: solid 1px #e0e0e0;
+        padding: 0 20px;
+        position: relative;
+        box-sizing: border-box;
+        height: 48px;
+        line-height: 48px;
+        &--arrow {
+            &:after {
+                transform: rotate(-135deg);
+                display: block;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 22px;
+                margin: auto;
+                content: "";
+                width: 6px;
+                height: 6px;
+                border-left: solid 2px #757575;
+                border-top: solid 2px #757575;
+            }
+        }
+    }
+}
+
+a.searchList__item {
+    display: block;
+}

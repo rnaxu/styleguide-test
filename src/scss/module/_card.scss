@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+.card {
+    margin-bottom: 8px;
+    border-bottom: solid 1px #e0e0e0;
+    &:last-child {
+        margin-bottom: 0px;
+    }
+    &__thumbnail {
+        background: {
+            size: cover;
+            position: center;
+        }
+        height: 176px;
+        color: #fff;
+    }
+    &__overlay {
+        height: 100%;
+        padding: 0 16px;
+    }
+    &__shopName {
+        padding-top: 25px;
+        font-size: 21px;
+        line-height: 1.3;
+    }
+    &__info {
+        margin-top: 11px;
+        font-size: 11px;
+        line-height: 1.4;
+    }
+    &__textbox {
+        padding: 17px 16px 21px;
+        background-color: #fff;
+        font-size: 13px;
+        color: #757575;
+        line-height: 1.5;
+    }
+}
+
+ // _card-2col.scss *
+.card-2col {
+    width: 100%;
+    background-color: #5d4037;
+    margin-bottom: 16px;
+    display: block;
+    &:first-child {
+        margin-right: 2px;
+    }
+    &__thumbnail {
+        background: {
+            size: cover;
+            position: center;
+        }
+        height: 158px;
+    }
+    &__textbox {
+        padding: 9px 16px 10px;
+        color: #fff;
+    }
+    &__shopName {
+        font-size: 13px;
+        line-height: 1.5;
+        font-weight: bold;
+    }
+    &__access {
+        font-size: 11px;
+        line-height: 1.4;
+        margin-top: 3px;
+        opacity: .7;
+    }
+}
+
+.js-card__overlay {
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.3) 0%, rgba(255,255,255,0.3) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.3) 0%,rgba(255,255,255,0.3) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(255,255,255,0.3) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}

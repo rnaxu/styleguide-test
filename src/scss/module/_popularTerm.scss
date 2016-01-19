@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+.popularTerm {
+    font-size: 13px;
+    padding: 8px 16px 4px;
+    border-bottom: solid 1px #dcdcdc;
+    &__item {
+        margin: 0 16px 16px 0;
+        display: inline-block;
+    }
+}

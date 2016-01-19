@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+// text color helper
+
+// #403b36
+.-clr-strong {
+	color: $color-strong;
+}
+
+// #797877
+.-clr-major {
+	color: $color-major;
+}
+
+// #666
+.-clr-light {
+	color: $color-light;
+}
+
+// #999
+.-clr-light-super {
+	color: $color-super-light;
+}
+
+// #aaa
+.-clr-light-ultra {
+	color: $color-ultra-light;
+}
+
+// #444
+.-clr-default {
+	color: $color-default;
+}
+
+// #09598d
+.-clr-link {
+	color: $color-link;
+}
+
+.-clr-checklist {
+	color: $color-checklist;
+}
+
+// #cc0000
+.-clr-attention {
+	color: $color-attention;
+}
+
+.-clr-disable {
+	color: $color-disable;
+}
+
+.-clr-white {
+	color: #fff;
+}
+
+.-clr-ad {
+	color: $color-ad;
+}
+
+// text line height helper
+.-lh-l {
+	line-height: 1.6;
+}
+.-lh-m {
+	line-height: 1.4;
+}
+.-lh-s {
+	line-height: 1;
+}
+
+
+// text position helper
+
+.-right {
+	text-align: right;
+}
+.-center {
+	text-align: center;
+}
+.-left {
+	text-align: left;
+}
+
+// text decoration helper
+
+.-underline {
+	text-decoration: underline;
+}
+.-normal {
+	font-weight: normal;
+}
+.-bold {
+	font-weight: bold;
+}
+
+.-text-overflow {
+	width: 100%;
+	max-width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+
+// super class
+.-default {
+	font-size: $size-default;
+	color: $color-default;
+}
+
+.-strong {
+	font-weight: bold;
+	color: $color-strong;
+}
+
+.-small {
+	font-size: $size-small;
+	color: $color-super-light;
+}
+
+.-small-fixed {
+	font-size: 10px;
+	color: $color-super-light;
+}

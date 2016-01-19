@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+.panel {
+    background: {
+        size: cover;
+        position: center;
+    }
+    position: relative;
+    height: 240px;
+    border-bottom: solid 1px #e0e0e0;
+    &__textbox {
+        background-color: rgba(255,255,255,0.7);
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    &__headline {
+        font-size: 15px;
+        line-height: 1.6;
+        margin: 12px 16px 0;
+        color: #212121;
+    }
+    &__date {
+        color: #757575;
+        font-size: 13px;
+        margin: 8px 16px 16px;
+    }
+}
