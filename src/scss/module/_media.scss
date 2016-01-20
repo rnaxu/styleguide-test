@@ -1,26 +1,5 @@
 @charset "utf-8";
 
-/*
-# media
-
-<article class="media">
-    <a href="#" class="flex">
-        <div class="media__thumbnail js-lazy" data-original="//uds.gnst.jp/shobun/img/3123559/t_3123559_1.jpg">
-            <div class="media__rank media__rank--1">1</div>
-        </div>
-        <div class="media__textbox flex__item">
-            <h3 class="media__headline -text-overflow">TOMBOY 渋谷道玄坂店</h3>
-            <div class="media__info">
-                <p class="-text-overflow">JR渋谷駅東口 徒歩7分</p>
-                <p class="-text-overflow">120席 店内全面禁煙</p>
-            </div>
-            <p class="media__pr">渋谷・神南エリアに大型カフェが誕生。モダン＆ヘルシーをコンセプト...</p>
-        </div>
-    </a>
-</article>
-
-*/
-
 .media {
     background-color: #fff;
     &--space {
@@ -40,32 +19,9 @@
         }
     }
     &__rank {
-        border-radius: 12px;
-        box-shadow: 0 3px 6px rgba(0,0,0,0.26);
-        background-color: #fff;
-        width: 24px;
-        height: 24px;
-        text-align: center;
-        line-height: 24px;
-        font: {
-            size: 13px;
-            weight: bold;
-        }
         position: absolute;
         top: 12px;
         left: 8px;
-        &--1 {
-            color: #e53935;
-        }
-        &--2 {
-            color: #e57373;
-        }
-        &--3 {
-            color: #ef9a9a;
-        }
-        &--low {
-            color: #9e9e9e;
-        }
     }
     &__textbox {
         padding: 14px 16px 16px;

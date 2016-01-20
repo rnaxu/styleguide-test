@@ -23,12 +23,11 @@
     "grunt-styledown": "0.0.3",
     "handlebars-helper-prettify": "^0.2.1",
     "jit-grunt": "^0.9.1",
-    "sc5-styleguide": "^0.3.41",
     "time-grunt": "^1.2.1"
   },
   "repository": {
     "type": "git",
-    "url": "http://glab.gnavi.co.jp/seki-may/styleguide-test.git"
+    "url": "https://github.com/rnaxu/styleguide-test.git"
   },
   "keywords": [
     "styleguide-test"

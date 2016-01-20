@@ -4,29 +4,467 @@
 <head>
   <meta charset="utf-8">
   <title>styleguide-test - module</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.css">
+  <link rel="stylesheet" href="../dist/css/all.css">
+  <link rel="stylesheet" href="css/styleguide.css">
+  <script src="https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="../dist/js/all.js"></script>
 </head>
 
 <body class="sg">
-  <div>
-    <div class="sg-example">
-      <div class="sg-canvas">
-        <div class="card">
-          <div class="card__thumbnail">
-            <img src="http://dummyimage.com/176/ccc/fff">
-            <p>hoge</p>
-          </div>
-        </div>
-      </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;card&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;card__thumbnail&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;http://dummyimage.com/176/ccc/fff&quot;</span> /&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>hoge<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+  <div class="sg-container">
+    <div class="styleguide-header">
+      <h1>styleguide-test</h1>
     </div>
+    <div class="styleguide-contents">
+      <p class="styleguide-subTitle">module</p>
+    </div>
+    <section class="sg-section sg-section-card">
+      <h2 id="card" class="sg">card</h2>
+      <section class="sg-block sg-section-card">
+        <div class="sg-text">
+          <h3 id="card" class="sg">card</h3>
+        </div>
+        <div class="sg-example">
+          <div class="sg-canvas">
+            <article class="card">
+              <div class="card__thumbnail js-lazy" data-original="//dummyimage.com/528x175/ccc/fff&amp;text=image">
+                <div class="card__overlay">
+                  <p class="card__shopName">&#x5E97;&#x8217;&#x540D;</p>
+                  <div class="card__info">
+                    <p class="-text-overflow">&#x30A2;&#x30AF;&#x30BB;&#x30B9;</p>
+                    <p class="-text-overflow">&#x5E2D;&#x60C5;&#x5831;</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card__textbox">
+                <p class="-text-overflow -bold">&#x756A;&#x7D44;&#x540D;</p>
+                <p class="mg2t">&#x653E;&#x9001;&#x65E5;&#x6642;</p>
+              </div>
+            </article>
+          </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">article</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;card&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;card__thumbnail js-lazy&quot;</span> <span class="hljs-attribute">data-original</span>=<span class="hljs-value">&quot;//dummyimage.com/528x175/ccc/fff&amp;text=image&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;card__overlay&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;card__shopName&quot;</span>&gt;</span>&#x5E97;&#x8217;&#x540D;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;card__info&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;-text-overflow&quot;</span>&gt;</span>&#x30A2;&#x30AF;&#x30BB;&#x30B9;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;-text-overflow&quot;</span>&gt;</span>&#x5E2D;&#x60C5;&#x5831;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;card__textbox&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;-text-overflow -bold&quot;</span>&gt;</span>&#x756A;&#x7D44;&#x540D;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;mg2t&quot;</span>&gt;</span>&#x653E;&#x9001;&#x65E5;&#x6642;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">article</span>&gt;</span></pre>
+        </div>
+      </section>
+      <section class="sg-block sg-section-card-2col">
+        <div class="sg-text">
+          <h3 id="card-2col" class="sg">card--2col</h3>
+        </div>
+        <div class="sg-example">
+          <div class="sg-canvas">
+            <div class="flex">
+              <article class="card-2col flex__item">
+                <div class="card-2col__thumbnail js-lazy" data-original="../dist/img/contents_card-2col_no_image.jpg"></div>
+                <div class="card-2col__textbox">
+                  <h3 class="card-2col__shopName">&#x5E97;&#x8217;&#x540D;</h3>
+                  <p class="card-2col__access">&#x30A2;&#x30AF;&#x30BB;&#x30B9;</p>
+                </div>
+              </article>
+              <article class="card-2col flex__item">
+                <div class="card-2col__thumbnail js-lazy" data-original="../dist/img/contents_card-2col_no_image.jpg"></div>
+                <div class="card-2col__textbox">
+                  <h3 class="card-2col__shopName">&#x5E97;&#x8217;&#x540D;</h3>
+                  <p class="card-2col__access">&#x30A2;&#x30AF;&#x30BB;&#x30B9;</p>
+                </div>
+              </article>
+            </div>
+          </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">article</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;card-2col flex__item&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;card-2col__thumbnail js-lazy&quot;</span> <span class="hljs-attribute">data-original</span>=<span class="hljs-value">&quot;../dist/img/contents_card-2col_no_image.jpg&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;card-2col__textbox&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;card-2col__shopName&quot;</span>&gt;</span>&#x5E97;&#x8217;&#x540D;<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;card-2col__access&quot;</span>&gt;</span>&#x30A2;&#x30AF;&#x30BB;&#x30B9;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">article</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">article</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;card-2col flex__item&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;card-2col__thumbnail js-lazy&quot;</span> <span class="hljs-attribute">data-original</span>=<span class="hljs-value">&quot;../dist/img/contents_card-2col_no_image.jpg&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;card-2col__textbox&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;card-2col__shopName&quot;</span>&gt;</span>&#x5E97;&#x8217;&#x540D;<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;card-2col__access&quot;</span>&gt;</span>&#x30A2;&#x30AF;&#x30BB;&#x30B9;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">article</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+        </div>
+      </section>
+    </section>
+
+    <section class="sg-section sg-section-flex">
+      <h2 id="flex" class="sg">flex</h2>
+      <section class="sg-block sg-section-flex">
+        <div class="sg-text">
+          <h3 id="flex" class="sg">flex</h3>
+        </div>
+        <div class="sg-example">
+          <div class="sg-canvas">
+            <div class="flex mg16b">
+              <div class="flex__item styleguide-bg--strong">flex__item</div>
+              <div class="styleguide-bg--light">hoge</div>
+            </div>
+            <div class="flex">
+              <div class="flex__item styleguide-bg--strong">flex__item</div>
+              <div class="styleguide-bg--light">hogehogehoge</div>
+            </div>
+          </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex mg16b&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex__item styleguide-bg--strong&quot;</span>&gt;</span>flex__item<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;styleguide-bg--light&quot;</span>&gt;</span>hoge<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;flex__item styleguide-bg--strong&quot;</span>&gt;</span>flex__item<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;styleguide-bg--light&quot;</span>&gt;</span>hogehogehoge<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+        </div>
+      </section>
+    </section>
+
+    <section class="sg-section sg-section-headline">
+      <h2 id="headline" class="sg">headline</h2>
+      <section class="sg-block sg-section-headline">
+        <div class="sg-text">
+          <h3 id="headline" class="sg">headline</h3>
+        </div>
+        <div class="sg-example">
+          <div class="sg-canvas">
+            <div class="headline">
+              <h2 class="headline__main">&#x30E1;&#x30A4;&#x30F3;&#x30BF;&#x30A4;&#x30C8;&#x30EB;</h2>
+              <p class="headline__sub">&#x30B5;&#x30D6;&#x30BF;&#x30A4;&#x30C8;&#x30EB;</p>
+            </div>
+          </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;headline&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;headline__main&quot;</span>&gt;</span>&#x30E1;&#x30A4;&#x30F3;&#x30BF;&#x30A4;&#x30C8;&#x30EB;<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;headline__sub&quot;</span>&gt;</span>&#x30B5;&#x30D6;&#x30BF;&#x30A4;&#x30C8;&#x30EB;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+        </div>
+      </section>
+      <section class="sg-block sg-section-headline-keyword">
+        <div class="sg-text">
+          <h3 id="headline-keyword" class="sg">headline--keyword</h3>
+        </div>
+        <div class="sg-example">
+          <div class="sg-canvas">
+            <div class="headline headline--keyword">
+              <h2 class="headline__main">&#x30E1;&#x30A4;&#x30F3;&#x30BF;&#x30A4;&#x30C8;&#x30EB;</h2>
+            </div>
+          </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;headline headline--keyword&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;headline__main&quot;</span>&gt;</span>&#x30E1;&#x30A4;&#x30F3;&#x30BF;&#x30A4;&#x30C8;&#x30EB;<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+        </div>
+      </section>
+    </section>
+
+    <section class="sg-section sg-section-helper">
+      <h2 id="helper" class="sg">helper</h2>
+      <p class="sg">helper&#x306F;
+        <code class="sg">-</code>&#x304B;&#x3089;&#x59CB;&#x307E;&#x308B;</p>
+      <section class="sg-block sg-section-margin">
+        <h3 id="margin" class="sg">margin</h3>
+        <p class="sg">&#x547D;&#x540D;&#x898F;&#x5247;
+          <code class="sg">.-mg + &#x30D4;&#x30AF;&#x30BB;&#x30EB; + &#x65B9;&#x5411;</code>
+        </p>
+      </section>
+      <section class="sg-block sg-section-padding">
+        <h3 id="padding" class="sg">padding</h3>
+        <p class="sg">&#x547D;&#x540D;&#x898F;&#x5247;
+          <code class="sg">.-pd + &#x30D4;&#x30AF;&#x30BB;&#x30EB; + &#x65B9;&#x5411;</code>
+        </p>
+      </section>
+      <section class="sg-block sg-section-color">
+        <h3 id="color" class="sg">color</h3>
+        <p class="sg">
+          <code class="sg">.-clr-strong</code>,
+          <code class="sg">.-clr-major</code>,
+          <code class="sg">.-clr-light</code>...</p>
+      </section>
+      <section class="sg-block sg-section-line-height">
+        <h3 id="line-height" class="sg">line-height</h3>
+        <p class="sg">
+          <code class="sg">.-lh-l</code>,
+          <code class="sg">.-lh-m</code>,
+          <code class="sg">.-lh-s</code>
+        </p>
+      </section>
+      <section class="sg-block sg-section-text-align">
+        <h3 id="text-align" class="sg">text-align</h3>
+        <p class="sg">
+          <code class="sg">.-right</code>,
+          <code class="sg">.-center</code>,
+          <code class="sg">.-left</code>
+        </p>
+      </section>
+      <section class="sg-block sg-section-text-decoration-font-weight">
+        <h3 id="text-decoration-font-weight" class="sg">text-decoration, font-weight</h3>
+        <p class="sg">
+          <code class="sg">.-underline</code>,
+          <code class="sg">.-normal</code>,
+          <code class="sg">.-bold</code>
+        </p>
+      </section>
+      <section class="sg-block sg-section--">
+        <h3 id="-" class="sg">...</h3>
+      </section>
+    </section>
+
+    <section class="sg-section sg-section-hero">
+      <h2 id="hero" class="sg">hero</h2>
+      <section class="sg-block sg-section-hero">
+        <div class="sg-text">
+          <h3 id="hero" class="sg">hero</h3>
+        </div>
+        <div class="sg-example">
+          <div class="sg-canvas">
+            <h1 class="hero">
+              <span class="hero__main">&#x30BF;&#x30A4;&#x30C8;&#x30EB;</span>
+              <span class="hero__sub">&#x30B5;&#x30D6;&#x30BF;&#x30A4;&#x30C8;&#x30EB;</span>
+            </h1>
+          </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;hero&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;hero__main&quot;</span>&gt;</span>&#x30BF;&#x30A4;&#x30C8;&#x30EB;<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;hero__sub&quot;</span>&gt;</span>&#x30B5;&#x30D6;&#x30BF;&#x30A4;&#x30C8;&#x30EB;<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span></pre>
+        </div>
+      </section>
+    </section>
+
+    <section class="sg-section sg-section-media">
+      <h2 id="media" class="sg">media</h2>
+      <p class="sg">rank&#x90E8;&#x5206;&#x306F;&#x5FC5;&#x8981;&#x306B;&#x5FDC;&#x3058;&#x3066;&#x53D6;&#x308A;&#x5916;&#x3057;&#x3067;&#x304D;&#x308B;</p>
+      <section class="sg-block sg-section-media">
+        <div class="sg-text">
+          <h3 id="media" class="sg">media</h3>
+        </div>
+        <div class="sg-example">
+          <div class="sg-canvas">
+            <article class="media flex">
+              <div class="media__thumbnail js-lazy" data-original="../dist/img/contents_media_no_image.jpg">
+                <div class="media__rank rank rank--1">1</div>
+              </div>
+              <div class="media__textbox flex__item">
+                <h3 class="media__headline -text-overflow">&#x5E97;&#x8217;&#x540D;</h3>
+                <div class="media__info">
+                  <p class="-text-overflow">&#x30A2;&#x30AF;&#x30BB;&#x30B9;</p>
+                  <p class="-text-overflow">&#x5E2D;&#x60C5;&#x5831;</p>
+                </div>
+                <p class="media__pr">PR&#x6587;&#x306A;&#x3069;</p>
+              </div>
+            </article>
+
+            <article class="media flex">
+              <div class="media__thumbnail js-lazy" data-original="../dist/img/contents_media_no_image.jpg">
+                <div class="media__rank rank rank--2">2</div>
+              </div>
+              <div class="media__textbox flex__item">
+                <h3 class="media__headline -text-overflow">&#x5E97;&#x8217;&#x540D;</h3>
+                <div class="media__info">
+                  <p class="-text-overflow">&#x30A2;&#x30AF;&#x30BB;&#x30B9;</p>
+                  <p class="-text-overflow">&#x5E2D;&#x60C5;&#x5831;</p>
+                </div>
+                <p class="media__pr">PR&#x6587;&#x306A;&#x3069;</p>
+              </div>
+            </article>
+
+            <article class="media flex">
+              <div class="media__thumbnail js-lazy" data-original="../dist/img/contents_media_no_image.jpg">
+                <div class="media__rank rank rank--3">3</div>
+              </div>
+              <div class="media__textbox flex__item">
+                <h3 class="media__headline -text-overflow">&#x5E97;&#x8217;&#x540D;</h3>
+                <div class="media__info">
+                  <p class="-text-overflow">&#x30A2;&#x30AF;&#x30BB;&#x30B9;</p>
+                  <p class="-text-overflow">&#x5E2D;&#x60C5;&#x5831;</p>
+                </div>
+                <p class="media__pr">PR&#x6587;&#x306A;&#x3069;</p>
+              </div>
+            </article>
+
+            <article class="media flex">
+              <div class="media__thumbnail js-lazy" data-original="../dist/img/contents_media_no_image.jpg">
+                <div class="media__rank rank rank--low">4</div>
+              </div>
+              <div class="media__textbox flex__item">
+                <h3 class="media__headline -text-overflow">&#x5E97;&#x8217;&#x540D;</h3>
+                <div class="media__info">
+                  <p class="-text-overflow">&#x30A2;&#x30AF;&#x30BB;&#x30B9;</p>
+                  <p class="-text-overflow">&#x5E2D;&#x60C5;&#x5831;</p>
+                </div>
+                <p class="media__pr">PR&#x6587;&#x306A;&#x3069;</p>
+              </div>
+            </article>
+
+            <article class="media flex">
+              <div class="media__thumbnail js-lazy" data-original="../dist/img/contents_media_no_image.jpg">
+                <div class="media__rank rank rank--low">5</div>
+              </div>
+              <div class="media__textbox flex__item">
+                <h3 class="media__headline -text-overflow">&#x5E97;&#x8217;&#x540D;</h3>
+                <div class="media__info">
+                  <p class="-text-overflow">&#x30A2;&#x30AF;&#x30BB;&#x30B9;</p>
+                  <p class="-text-overflow">&#x5E2D;&#x60C5;&#x5831;</p>
+                </div>
+                <p class="media__pr">PR&#x6587;&#x306A;&#x3069;</p>
+              </div>
+            </article>
+          </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">article</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media flex&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media__thumbnail js-lazy&quot;</span> <span class="hljs-attribute">data-original</span>=<span class="hljs-value">&quot;../dist/img/contents_media_no_image.jpg&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media__rank rank rank--1&quot;</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media__textbox flex__item&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media__headline -text-overflow&quot;</span>&gt;</span>&#x5E97;&#x8217;&#x540D;<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media__info&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;-text-overflow&quot;</span>&gt;</span>&#x30A2;&#x30AF;&#x30BB;&#x30B9;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;-text-overflow&quot;</span>&gt;</span>&#x5E2D;&#x60C5;&#x5831;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media__pr&quot;</span>&gt;</span>PR&#x6587;&#x306A;&#x3069;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">article</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">article</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media flex&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media__thumbnail js-lazy&quot;</span> <span class="hljs-attribute">data-original</span>=<span class="hljs-value">&quot;../dist/img/contents_media_no_image.jpg&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media__rank rank rank--2&quot;</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media__textbox flex__item&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media__headline -text-overflow&quot;</span>&gt;</span>&#x5E97;&#x8217;&#x540D;<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media__info&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;-text-overflow&quot;</span>&gt;</span>&#x30A2;&#x30AF;&#x30BB;&#x30B9;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;-text-overflow&quot;</span>&gt;</span>&#x5E2D;&#x60C5;&#x5831;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media__pr&quot;</span>&gt;</span>PR&#x6587;&#x306A;&#x3069;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">article</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">article</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media flex&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media__thumbnail js-lazy&quot;</span> <span class="hljs-attribute">data-original</span>=<span class="hljs-value">&quot;../dist/img/contents_media_no_image.jpg&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media__rank rank rank--3&quot;</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media__textbox flex__item&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media__headline -text-overflow&quot;</span>&gt;</span>&#x5E97;&#x8217;&#x540D;<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media__info&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;-text-overflow&quot;</span>&gt;</span>&#x30A2;&#x30AF;&#x30BB;&#x30B9;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;-text-overflow&quot;</span>&gt;</span>&#x5E2D;&#x60C5;&#x5831;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media__pr&quot;</span>&gt;</span>PR&#x6587;&#x306A;&#x3069;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">article</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">article</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media flex&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media__thumbnail js-lazy&quot;</span> <span class="hljs-attribute">data-original</span>=<span class="hljs-value">&quot;../dist/img/contents_media_no_image.jpg&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media__rank rank rank--low&quot;</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media__textbox flex__item&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media__headline -text-overflow&quot;</span>&gt;</span>&#x5E97;&#x8217;&#x540D;<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media__info&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;-text-overflow&quot;</span>&gt;</span>&#x30A2;&#x30AF;&#x30BB;&#x30B9;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;-text-overflow&quot;</span>&gt;</span>&#x5E2D;&#x60C5;&#x5831;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media__pr&quot;</span>&gt;</span>PR&#x6587;&#x306A;&#x3069;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">article</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">article</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media flex&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media__thumbnail js-lazy&quot;</span> <span class="hljs-attribute">data-original</span>=<span class="hljs-value">&quot;../dist/img/contents_media_no_image.jpg&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media__rank rank rank--low&quot;</span>&gt;</span>5<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media__textbox flex__item&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media__headline -text-overflow&quot;</span>&gt;</span>&#x5E97;&#x8217;&#x540D;<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media__info&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;-text-overflow&quot;</span>&gt;</span>&#x30A2;&#x30AF;&#x30BB;&#x30B9;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;-text-overflow&quot;</span>&gt;</span>&#x5E2D;&#x60C5;&#x5831;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media__pr&quot;</span>&gt;</span>PR&#x6587;&#x306A;&#x3069;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">article</span>&gt;</span></pre>
+        </div>
+      </section>
+      <section class="sg-block sg-section-media-space">
+        <div class="sg-text">
+          <h3 id="media-space" class="sg">media--space</h3>
+        </div>
+        <div class="sg-example">
+          <div class="sg-canvas">
+            <article class="media media--space flex">
+              <div class="media__thumbnail js-lazy" data-original="../dist/img/contents_media_no_image.jpg"></div>
+              <div class="media__textbox flex__item">
+                <h3 class="media__headline -text-overflow">&#x5E97;&#x8217;&#x540D;</h3>
+                <div class="media__info">
+                  <p class="-text-overflow">&#x30A2;&#x30AF;&#x30BB;&#x30B9;</p>
+                  <p class="-text-overflow">&#x5E2D;&#x60C5;&#x5831;</p>
+                </div>
+                <p class="media__pr">PR&#x6587;&#x306A;&#x3069;</p>
+              </div>
+            </article>
+
+            <article class="media media--space flex">
+              <div class="media__thumbnail js-lazy" data-original="../dist/img/contents_media_no_image.jpg"></div>
+              <div class="media__textbox flex__item">
+                <h3 class="media__headline -text-overflow">&#x5E97;&#x8217;&#x540D;</h3>
+                <div class="media__info">
+                  <p class="-text-overflow">&#x30A2;&#x30AF;&#x30BB;&#x30B9;</p>
+                  <p class="-text-overflow">&#x5E2D;&#x60C5;&#x5831;</p>
+                </div>
+                <p class="media__pr">PR&#x6587;&#x306A;&#x3069;</p>
+              </div>
+            </article>
+          </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">article</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media media--space flex&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media__thumbnail js-lazy&quot;</span> <span class="hljs-attribute">data-original</span>=<span class="hljs-value">&quot;../dist/img/contents_media_no_image.jpg&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media__textbox flex__item&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media__headline -text-overflow&quot;</span>&gt;</span>&#x5E97;&#x8217;&#x540D;<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media__info&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;-text-overflow&quot;</span>&gt;</span>&#x30A2;&#x30AF;&#x30BB;&#x30B9;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;-text-overflow&quot;</span>&gt;</span>&#x5E2D;&#x60C5;&#x5831;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media__pr&quot;</span>&gt;</span>PR&#x6587;&#x306A;&#x3069;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">article</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">article</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media media--space flex&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media__thumbnail js-lazy&quot;</span> <span class="hljs-attribute">data-original</span>=<span class="hljs-value">&quot;../dist/img/contents_media_no_image.jpg&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media__textbox flex__item&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h3</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media__headline -text-overflow&quot;</span>&gt;</span>&#x5E97;&#x8217;&#x540D;<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media__info&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;-text-overflow&quot;</span>&gt;</span>&#x30A2;&#x30AF;&#x30BB;&#x30B9;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;-text-overflow&quot;</span>&gt;</span>&#x5E2D;&#x60C5;&#x5831;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;media__pr&quot;</span>&gt;</span>PR&#x6587;&#x306A;&#x3069;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">article</span>&gt;</span></pre>
+        </div>
+      </section>
+    </section>
+
+    <section class="sg-section sg-section-rank">
+      <h2 id="rank" class="sg">rank</h2>
+      <section class="sg-block sg-section-rank-n">
+        <div class="sg-text">
+          <h3 id="rank-n" class="sg">rank--n</h3>
+        </div>
+        <div class="sg-example">
+          <div class="sg-canvas">
+            <div class="rank rank--1 -mg10b">1</div>
+            <div class="rank rank--2 -mg10b">2</div>
+            <div class="rank rank--3 -mg10b">3</div>
+            <div class="rank rank--low -mg10b">4</div>
+            <div class="rank rank--low">5</div>
+          </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;rank rank--1 -mg10b&quot;</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;rank rank--2 -mg10b&quot;</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;rank rank--3 -mg10b&quot;</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;rank rank--low -mg10b&quot;</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;rank rank--low&quot;</span>&gt;</span>5<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+        </div>
+      </section>
+    </section>
 
   </div>
-  <script src="https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.js"></script>
 </body>
 
 </html>

@@ -2,10 +2,9 @@
 
 @import "base/reset";
 @import "base/default";
+@import "base/global_var";
 
 @import "module/set";
-@import "module/global_var";
-@import "module/multiple";
 @import "module/flex";
 @import "module/helper";
 
@@ -18,3 +17,4 @@
 @import "module/popularTerm";
 @import "module/searchList";
 @import "module/normalPageLink";
+@import "module/rank";

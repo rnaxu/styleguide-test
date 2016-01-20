@@ -173,13 +173,23 @@ module.exports = function (grunt) {
     },
 
     styledown: {
+      base: {
+        files: {
+          'styleguide/base.html': ['styleguide/base/*.md']
+        },
+        options: {
+          title: 'styleguide-test - base',
+          css: '../dist/css/all.css',/*,
+          config: 'styleguide/module/config.md',*/
+        }
+      },
       module: {
         files: {
           'styleguide/module.html': ['styleguide/module/*.md']
         },
         options: {
           title: 'styleguide-test - module',
-          config: 'styleguide/module/config.md',
+          config: 'styleguide/module/config.md'
         }
       }
     },
@@ -224,10 +234,10 @@ module.exports = function (grunt) {
 
 
   grunt.registerTask('build:html', ['assemble']);
-  grunt.registerTask('build:css', [/*'sprite', 'style', */'sass', 'autoprefixer', 'csscomb', 'csso']);
+  grunt.registerTask('build:css', [/*'sprite' ,*/'sass', 'autoprefixer', 'csscomb', 'csso']);
   grunt.registerTask('build:js', ['concat', 'uglify']);
   grunt.registerTask('build:img', ['copy']);
-  grunt.registerTask('build', ['clean', 'build:html', 'build:css', 'build:js', 'build:img']);
+  grunt.registerTask('build', ['clean', 'build:html', 'build:css', 'build:js', 'build:img', 'styledown']);
   grunt.registerTask('default', ['build']);
   grunt.registerTask('style', ['styledown']);
   grunt.registerTask('w', ['connect', 'watch']);
