@@ -1,9 +1,10 @@
 ##card
+画像は背景
 
 ###card
     @example
     <article class="card">
-        <div class="card__thumbnail js-lazy" data-original="//dummyimage.com/528x175/ccc/fff&text=image">
+        <div class="card__thumbnail js-lazy" data-original="../dist/img/contents_card_no_image.jpg">
             <div class="card__overlay">
                 <p class="card__shopName">店舗名</p>
                 <div class="card__info">

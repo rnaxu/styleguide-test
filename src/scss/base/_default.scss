@@ -1,10 +1,18 @@
 @charset "utf-8";
 
 body {
-    background-color: #fafafa;
+    background-color: #fff;
     font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ','Meiryo',sans-serif;
     line-height: 1;
     a {
+        text-decoration: none;
         color: #0091ea;
+    }
+    img {
+        vertical-align: bottom;
+    }
+    #page {
+        position: relative;
+        background-color: #fafafa;
     }
 }

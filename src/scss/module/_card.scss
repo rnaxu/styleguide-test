@@ -46,6 +46,9 @@
     &:first-child {
         margin-right: 2px;
     }
+    &:last-child {
+        margin-right: 0;
+    }
     &__thumbnail {
         background: {
             size: cover;
