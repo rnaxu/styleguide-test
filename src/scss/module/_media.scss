@@ -1,3 +1,38 @@
+/*
+# media
+block `.media`
+
+
+element `.media__thumbnail`
+```
+<article class="media">
+    <a href="#" class="flex">
+        <div class="media__thumbnail" style="background-image: url(http://uds.gnst.jp/shobun/img/3123559/t_3123559_1.jpg)">
+            <div class="media__rank rank rank--1">1</div>
+        </div>
+        <div class="media__textbox flex__item">
+            <h3 class="media__headline -text-overflow">TOMBOY 渋谷道玄坂店</h3>
+            <div class="media__info">
+                <p class="-text-overflow">JR渋谷駅東口 徒歩7分</p>
+                <p class="-text-overflow">120席 店内全面禁煙</p>
+            </div>
+            <p class="media__pr">渋谷・神南エリアに大型カフェが誕生。モダン＆ヘルシーをコンセプト...</p>
+        </div>
+    </a>
+</article>
+```
+
+## 主要なボタン
+
+`.btn`クラスと併せて、`.btn-primary`を付与する。
+
+```
+<div class="section">
+  <a href="#" class="btn btn-primary">Primary</a>
+</div>
+```
+*/
+
 @charset "utf-8";
 
 .media {

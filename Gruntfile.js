@@ -164,10 +164,11 @@ module.exports = function (grunt) {
         dist: {
             options: {
                 name: 'styleguide-test',
-                'preprocessor': 'scss'
+                'preprocessor': 'scss',
+                'include': ['<%= path.dist %>css/all.css']
             },
             files: {
-                '<%= path.dist %>styleguide/': ['<%= path.scss_src %>module/*.scss']
+                'styledocco/': ['<%= path.scss_src %>module/_media.scss']
             }
         }
     },
@@ -175,7 +176,7 @@ module.exports = function (grunt) {
     styledown: {
       base: {
         files: {
-          'styleguide/base.html': ['styleguide/base/*.md']
+          'styledown/base.html': ['styledown/base/*.md']
         },
         options: {
           title: 'styleguide-test - base',
@@ -185,11 +186,11 @@ module.exports = function (grunt) {
       },
       module: {
         files: {
-          'styleguide/module.html': ['styleguide/module/*.md']
+          'styledown/module.html': ['styledown/module/*.md']
         },
         options: {
           title: 'styleguide-test - module',
-          config: 'styleguide/module/config.md'
+          config: 'styledown/module/config.md'
         }
       }
     },
@@ -202,7 +203,7 @@ module.exports = function (grunt) {
       },
       css: {
         files: ['src/**/*.scss'],
-        tasks: ['build:css'],
+        tasks: ['build:css', 'styledocco'],
       },
       js: {
         files: ['src/**/*.js'],
@@ -212,8 +213,8 @@ module.exports = function (grunt) {
         files: ['src/**/*.{png,jpg}'],
         tasks: ['build:img']
       },
-      styleguide: {
-        files: ['styleguide/**/*.{css,md}'],
+      styledown: {
+        files: ['styledown/**/*.{css,md}'],
         tasks: ['styledown']
       },
       options: {
@@ -237,8 +238,7 @@ module.exports = function (grunt) {
   grunt.registerTask('build:css', [/*'sprite' ,*/'sass', 'autoprefixer', 'csscomb', 'csso']);
   grunt.registerTask('build:js', ['concat', 'uglify']);
   grunt.registerTask('build:img', ['copy']);
-  grunt.registerTask('build', ['clean', 'build:html', 'build:css', 'build:js', 'build:img', 'styledown']);
+  grunt.registerTask('build', ['clean', 'build:html', 'build:css', 'build:js', 'build:img', 'styledown', 'styledocco']);
   grunt.registerTask('default', ['build']);
-  grunt.registerTask('style', ['styledown']);
   grunt.registerTask('w', ['connect', 'watch']);
 };
