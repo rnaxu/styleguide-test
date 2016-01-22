@@ -168,7 +168,7 @@ module.exports = function (grunt) {
                 'include': ['<%= path.dist %>css/all.css']
             },
             files: {
-                'styledocco/': ['<%= path.scss_src %>module/_media.scss']
+                'styledocco/': ['<%= path.scss_src %>']
             }
         }
     },
@@ -195,6 +195,27 @@ module.exports = function (grunt) {
       }
     },
 
+    hologram: {
+      generate: {
+        options: {
+          config: 'hologram/config.yml'
+        }
+      }
+    },
+
+    kss: {
+      options: {
+        includeType: 'css',
+        includePath: '<%= path.dist %>css/all.css'/*,
+        template: '/path/to/template_directory'*/
+      },
+      dist: {
+        files: {
+          'kss/': ['<%= path.scss_src %>']
+        }
+      }
+    },
+
 
     watch: {
       html: {
@@ -203,7 +224,7 @@ module.exports = function (grunt) {
       },
       css: {
         files: ['src/**/*.scss'],
-        tasks: ['build:css', 'styledocco'],
+        tasks: ['build:css'],
       },
       js: {
         files: ['src/**/*.js'],
@@ -213,9 +234,17 @@ module.exports = function (grunt) {
         files: ['src/**/*.{png,jpg}'],
         tasks: ['build:img']
       },
+      styledocco: {
+          files: ['src/scss/**/*.{scss,md}'],
+          tasks: ['styledocco']
+      },
       styledown: {
         files: ['styledown/**/*.{css,md}'],
         tasks: ['styledown']
+      },
+      hologram: {
+        files: ['src/scss/**/*.{scss,md}', 'hologram/**/*.{css,rb,erb}'],
+        tasks: ['hologram']
       },
       options: {
         livereload: true
@@ -238,7 +267,8 @@ module.exports = function (grunt) {
   grunt.registerTask('build:css', [/*'sprite' ,*/'sass', 'autoprefixer', 'csscomb', 'csso']);
   grunt.registerTask('build:js', ['concat', 'uglify']);
   grunt.registerTask('build:img', ['copy']);
-  grunt.registerTask('build', ['clean', 'build:html', 'build:css', 'build:js', 'build:img', 'styledown', 'styledocco']);
+  grunt.registerTask('build:style', ['styledown', 'styledocco', 'hologram']);
+  grunt.registerTask('build', ['clean', 'build:html', 'build:css', 'build:js', 'build:img', 'build:style']);
   grunt.registerTask('default', ['build']);
   grunt.registerTask('w', ['connect', 'watch']);
 };

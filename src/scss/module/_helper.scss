@@ -1,6 +1,33 @@
+/*
+#helper
+helperは`-`から始まる
+
+##margin
+命名規則
+`.-mg + ピクセル + 方向`
+
+##padding
+命名規則
+`.-pd + ピクセル + 方向`
+
+##color
+`.-clr-strong`, `.-clr-major`, `.-clr-light`...
+
+##line-height
+`.-lh-l`, `.-lh-m`, `.-lh-s`
+
+##text-align
+`.-right`, `.-center`, `.-left`
+
+##text-decoration, font-weight
+`.-underline`, `.-normal`, `.-bold`
+
+##...
+*/
+
 @charset "utf-8";
 
-// margin helper
+  // margin helper
 
 .-mg0a {margin:  0px;}
 .-mg4a {margin:  4px;}
@@ -77,7 +104,7 @@
 .-mg10tb {margin-top:  10px; margin-bottom:  10px;}
 .-mg16tb {margin-top:  16px; margin-bottom:  16px;}
 
-// padding helper
+  // padding helper
 
 .-pd0a {padding: 0px;}
 .-pd4a {padding: 4px;}
@@ -147,39 +174,39 @@
 .-pd10tb {padding-top: 10px; padding-bottom: 10px;}
 .-pd16tb {padding-top: 16px; padding-bottom: 16px;}
 
-// text color helper
+  // text color helper
 
-// #403b36
+ // #403b36
 .-clr-strong {
 	color: $color-strong;
 }
 
-// #797877
+ // #797877
 .-clr-major {
 	color: $color-major;
 }
 
-// #666
+ // #666
 .-clr-light {
 	color: $color-light;
 }
 
-// #999
+ // #999
 .-clr-light-super {
 	color: $color-super-light;
 }
 
-// #aaa
+ // #aaa
 .-clr-light-ultra {
 	color: $color-ultra-light;
 }
 
-// #444
+ // #444
 .-clr-default {
 	color: $color-default;
 }
 
-// #09598d
+ // #09598d
 .-clr-link {
 	color: $color-link;
 }
@@ -188,7 +215,7 @@
 	color: $color-checklist;
 }
 
-// #cc0000
+ // #cc0000
 .-clr-attention {
 	color: $color-attention;
 }
@@ -209,7 +236,16 @@
     color: $color-light-black;
 }
 
-// text line height helper
+ // background color
+.-bg--strong {
+    background-color: #f4ead1;
+}
+
+.-bg--light {
+    background-color: #eee;
+}
+
+ // text line height helper
 .-lh-l {
 	line-height: 1.6;
 }
@@ -221,7 +257,7 @@
 }
 
 
-// text position helper
+ // text position helper
 
 .-right {
 	text-align: right;
@@ -233,7 +269,7 @@
 	text-align: left;
 }
 
-// text decoration helper
+ // text decoration helper
 
 .-underline {
 	text-decoration: underline;
@@ -254,138 +290,138 @@
 }
 
 
-// super class
-.-default {
-	font-size: $size-default;
-	color: $color-default;
-}
+ // super class
+ // .-default {
+ // 	font-size: $size-default;
+ // 	color: $color-default;
+ // }
+ //
+ // .-strong {
+ // 	font-weight: bold;
+ // 	color: $color-strong;
+ // }
+ //
+ // .-small {
+ // 	font-size: $size-small;
+ // 	color: $color-super-light;
+ // }
+ //
+ // .-small-fixed {
+ // 	font-size: 10px;
+ // 	color: $color-super-light;
+ // }
 
-.-strong {
-	font-weight: bold;
-	color: $color-strong;
-}
-
-.-small {
-	font-size: $size-small;
-	color: $color-super-light;
-}
-
-.-small-fixed {
-	font-size: 10px;
-	color: $color-super-light;
-}
 
 
-
-// .txtR {text-align: right !important;;}
-// .txtL {text-align: left !important;;}
-// .txtC {text-align: center !important;;}
-//
-// .fltR {float: right !important;;}
-// .fltL {float: left !important;;}
-//
-// .vAlignt {vertical-align: top !important;}
-// .vAlignm {vertical-align: middle !important;}
-// .vAlignb {vertical-align: bottom !important;}
-//
-//
-// .bdtn {border-top: none !important;}
-// .bdbn {border-bottom: none !important;}
-// .bdln {border-left: none !important;}
-// .bdrn {border-right: none !important;}
-// .bdn {border: none !important;}
-//
-// .bdt-s {border-top: solid 1px #ccc !important;}
-// .bdb-s {border-bottom: solid 1px #ccc !important;}
-//
-// .bdt-d {border-top: dotted 1px #ccc !important;}
-// .bdb-d {border-bottom: dotted 1px #ccc !important;}
-//
-// .bdrS {border-radius: 2px !important;;}
-// .bdrM {border-radius: 3px !important;;}
-// .bdrL {border-radius: 5px !important;;}
-//
-//
-// .clearBoth {clear: both !important;}
-// .nowrap {white-space: nowrap !important;}
-//
-// .uLine {text-decoration: underline !important;}
-// .inlineblock {display: inline-block !important;}
-//
+ // .txtR {text-align: right !important;;}
+ // .txtL {text-align: left !important;;}
+ // .txtC {text-align: center !important;;}
+ //
+ // .fltR {float: right !important;;}
+ // .fltL {float: left !important;;}
+ //
+ // .vAlignt {vertical-align: top !important;}
+ // .vAlignm {vertical-align: middle !important;}
+ // .vAlignb {vertical-align: bottom !important;}
+ //
+ //
+ // .bdtn {border-top: none !important;}
+ // .bdbn {border-bottom: none !important;}
+ // .bdln {border-left: none !important;}
+ // .bdrn {border-right: none !important;}
+ // .bdn {border: none !important;}
+ //
+ // .bdt-s {border-top: solid 1px #ccc !important;}
+ // .bdb-s {border-bottom: solid 1px #ccc !important;}
+ //
+ // .bdt-d {border-top: dotted 1px #ccc !important;}
+ // .bdb-d {border-bottom: dotted 1px #ccc !important;}
+ //
+ // .bdrS {border-radius: 2px !important;;}
+ // .bdrM {border-radius: 3px !important;;}
+ // .bdrL {border-radius: 5px !important;;}
+ //
+ //
+ // .clearBoth {clear: both !important;}
+ // .nowrap {white-space: nowrap !important;}
+ //
+ // .uLine {text-decoration: underline !important;}
+ // .inlineblock {display: inline-block !important;}
+ //
 .js-hidden {display: none !important;}
-// .js-visible {display: block !important;}
-// .js-disable {visibility: hidden !important;}
-// .js-opacity {opacity: 1 !important;}
-// .js-opacity-none {opacity: 0 !important;}
-//
-//
-// .js-move-stay {
-// 	opacity: 1;
-// 	-webkit-transform: translate3d(0px, 0px, 0px);
-// 	-webkit-transition: all 0.2s ease-out;
-// }
-// .js-move-left {
-// 	opacity: 0;
-// 	-webkit-transform: translate3d(-100%, 0px, 0px);
-// 	-webkit-transition: all 0.2s ease-out;
-// }
-// .js-move-right {
-// 	opacity: 0;
-// 	-webkit-transform: translate3d(100%, 0px, 0px);
-// 	-webkit-transition: all 0.2s ease-out;
-// }
-//
-// .wrap {
-// }
-// .wrap_bg_w {
-// 	background-color: #fff;
-// }
-// .wrap_bg_g {
-// 	background-color: #e9e6e2;
-// }
-// .normalBox {
-// 	background-color: #fff;
-// }
-//
-//
-// .b {font-weight: bold !important;}
-// .n-b {font-weight: normal !important;}
-//
-//
-// .fontUS {
-// 	font-size: 8px;
-// }
-// .fontSS {
-// 	font-size: $font_ss;
-// }
-// .fontS {
-// 	font-size: $font_s;
-// }
-// .fontSM {
-// 	font-size: $font_sm;
-// }
-// .fontM {
-// 	font-size: $font_m;
-// }
-// .fontL {
-// 	font-size: $font_l;
-// }
-// .fontLL {
-// 	font-size: $font_ll;
-// }
-//
-// .clrL {color: $text_color_l;}
-// .clrM {color: $text_color_m;}
-// .clrS {color: $text_color_s;}
-// .clrI {color: $text_color_alert;}
-// .clrR {color: $text_color_red;}
-// .clrW {color: $text_color_white;}
-// .clrO {color: $text_color_orange;}
-// .clrG {color: $text_color_gold;}
-// .clrCheck {color:$text_color_checklist !important;}
-//
-//
-// // _multiple.scss
-// .clrLightBlack {
-//     color: #212121;
-// }
+ // .js-visible {display: block !important;}
+ // .js-disable {visibility: hidden !important;}
+ // .js-opacity {opacity: 1 !important;}
+ // .js-opacity-none {opacity: 0 !important;}
+ //
+ //
+ // .js-move-stay {
+ // 	opacity: 1;
+ // 	-webkit-transform: translate3d(0px, 0px, 0px);
+ // 	-webkit-transition: all 0.2s ease-out;
+ // }
+ // .js-move-left {
+ // 	opacity: 0;
+ // 	-webkit-transform: translate3d(-100%, 0px, 0px);
+ // 	-webkit-transition: all 0.2s ease-out;
+ // }
+ // .js-move-right {
+ // 	opacity: 0;
+ // 	-webkit-transform: translate3d(100%, 0px, 0px);
+ // 	-webkit-transition: all 0.2s ease-out;
+ // }
+ //
+ // .wrap {
+ // }
+ // .wrap_bg_w {
+ // 	background-color: #fff;
+ // }
+ // .wrap_bg_g {
+ // 	background-color: #e9e6e2;
+ // }
+ // .normalBox {
+ // 	background-color: #fff;
+ // }
+ //
+ //
+ // .b {font-weight: bold !important;}
+ // .n-b {font-weight: normal !important;}
+ //
+ //
+ // .fontUS {
+ // 	font-size: 8px;
+ // }
+ // .fontSS {
+ // 	font-size: $font_ss;
+ // }
+ // .fontS {
+ // 	font-size: $font_s;
+ // }
+ // .fontSM {
+ // 	font-size: $font_sm;
+ // }
+ // .fontM {
+ // 	font-size: $font_m;
+ // }
+ // .fontL {
+ // 	font-size: $font_l;
+ // }
+ // .fontLL {
+ // 	font-size: $font_ll;
+ // }
+ //
+ // .clrL {color: $text_color_l;}
+ // .clrM {color: $text_color_m;}
+ // .clrS {color: $text_color_s;}
+ // .clrI {color: $text_color_alert;}
+ // .clrR {color: $text_color_red;}
+ // .clrW {color: $text_color_white;}
+ // .clrO {color: $text_color_orange;}
+ // .clrG {color: $text_color_gold;}
+ // .clrCheck {color:$text_color_checklist !important;}
+ //
+ //
+ //  // _multiple.scss
+ // .clrLightBlack {
+ //     color: #212121;
+ // }

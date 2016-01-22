@@ -1,11 +1,33 @@
+/* #global_var */
 @charset "utf-8";
 
-// border color
+/*
+## border color
 
-// $border-default: #e7decc;
+<div style="margin:20px;">
+    $border-default
+    <div style="width:50px;height:50px;background-color:#e7decc"></div>
+</div>
 
+*/
+$border-default: #e7decc;
 
-// text color
+/*
+## text color
+
+<div style="margin:20px">
+    $color-strong
+    <div style="width:50px;height:50px;background-color:#403b36"></div>
+    $color-light
+    <div style="width:50px;height:50px;background-color:#666"></div>
+    $color-link
+    <div style="width:50px;height:50px;background-color:#0f5d90"></div>
+    $color-ad
+    <div style="width:50px;height:50px;background-color:#689f38"></div>
+</div>
+
+###…
+*/
 $color-strong: #403b36;
 
 $color-light: #666;
@@ -29,37 +51,3 @@ $color-ad: #689f38;
 $color-checklist: #403b36;
 
 $color-light-black: #403b36;
-// bg
-
-
-// size rem
-// $size-huge: 1.333rem; //16px
-
-// $size-big: 1.167rem; //14px
-
-// $size-major: 1.083rem; //13px
-
-// $size-default: 1rem; //12px
-
-// $size-minor: 0.917rem; //11px
-
-// $size-small: 0.833rem; //10px
-
-// $size-tiny: 0.750rem; //9px
-
-
-
-// size px
-$size-huge: 16px;
-
-$size-big: 14px;
-
-$size-major: 13px;
-
-$size-default: 12px;
-
-$size-minor: 11px;
-
-$size-small: 10px;
-
-$size-tiny: 9px;

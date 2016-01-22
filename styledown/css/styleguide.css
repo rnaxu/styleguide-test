@@ -20,14 +20,6 @@
     font-size: 35px;
 }
 
-.styleguide-bg--strong {
-    background-color: #f4ead1;
-}
-
-.styleguide-bg--light {
-    background-color: #eee;
-}
-
 .sg-section {
     max-width: 960px;
     margin: 0 auto;

@@ -1,50 +1,50 @@
-@charset "utf-8";
-
-/*doc
----
-title: このスタイルシートについて
-name: 0-button-outline
-category: button
----
-
-このスタイルシートでは、ボタンのスタイルを指定しています。
-
-*/
+// Styleguide X
 
 
+/*
+#card
 
-/*doc
----
-title: デフォルトのボタン
-name: 1-button-default
-category: button
----
-
-デフォルトのボタンのスタイルです。
-
-class 属性に ```.button``` とつけると、ボタンになります。
-
-```example
+###card
+```
 <article class="card">
-    <a href="#">
-        <div class="card__thumbnail js-lazy" data-original="//uds.gnst.jp/rest/fs_img/k15awxgx0000/s_1001.jpg">
-            <div class="card__overlay js-overlay">
-                <h3 class="card__shopName -text-overflow">TOMBOY 渋谷道玄坂店</h3>
-                <div class="card__info">
-                    <p class="-text-overflow">JR渋谷駅東口 徒歩7分</p>
-                    <p class="-text-overflow">120席 店内全面禁煙</p>
-                </div>
+    <div class="card__thumbnail" style="background-image: url(../dist/img/contents_media_no_image.jpg)">
+        <div class="card__overlay">
+            <p class="card__shopName">店舗名</p>
+            <div class="card__info">
+                <p class="-text-overflow">アクセス</p>
+                <p class="-text-overflow">席情報</p>
             </div>
         </div>
-        <div class="card__textbox">
-            <p class="-text-overflow -bold">フジテレビ めざましテレビ</p>
-            <p class="-mg2t">2015年12月24日(木) 5時25分</p>
-        </div>
-    </a>
+    </div>
+    <div class="card__textbox">
+        <p class="-text-overflow -bold">番組名</p>
+        <p class="mg2t">放送日時</p>
+    </div>
 </article>
 ```
 
+###card--2col
+```
+<div class="flex">
+    <article class="card-2col flex__item">
+        <div class="card-2col__thumbnail" style="background-image: url(../dist/img/contents_media_no_image.jpg)"></div>
+        <div class="card-2col__textbox">
+            <h3 class="card-2col__shopName">店舗名</h3>
+            <p class="card-2col__access">アクセス</p>
+        </div>
+    </article>
+    <article class="card-2col flex__item">
+        <div class="card-2col__thumbnail" style="background-image: url(../dist/img/contents_media_no_image.jpg)"></div>
+        <div class="card-2col__textbox">
+            <h3 class="card-2col__shopName">店舗名</h3>
+            <p class="card-2col__access">アクセス</p>
+        </div>
+    </article>
+</div>
+```
 */
+
+@charset "utf-8";
 
 .card {
     margin-bottom: 8px;

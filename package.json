@@ -18,6 +18,8 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-csscomb": "^3.0.0",
     "grunt-csso": "^0.6.3",
+    "grunt-hologram": "0.0.7",
+    "grunt-kss": "^0.2.8",
     "grunt-spritesmith": "^4.7.1",
     "grunt-styledocco": "^0.2.1",
     "grunt-styledown": "0.0.3",

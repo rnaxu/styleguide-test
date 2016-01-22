@@ -1,3 +1,23 @@
+/* #panel */
+
+/*doc
+---
+title: panel
+name: panel
+category: panel
+---
+
+```example
+<article class="panel" style="background-image: url(../dist/img/contents_card_no_image.jpg)">
+    <div class="panel__textbox">
+        <h3 class="panel__headline">見出し</h3>
+        <p class="panel__date">日付</p>
+    </div>
+</article>
+```
+
+*/
+
 @charset "utf-8";
 
 .panel {
